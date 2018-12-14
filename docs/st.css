@@ -1,4 +1,61 @@
 @import url(https://fonts.googleapis.com/css?family=Mountains+of+Christmas);
-#hdr {
-    font-family:'Mountains of Christmas' , cursive;
+
+*:before
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header > h1 {
+    font-family:'Mountains of Christmas' , sans-serif;
+    text-align: center;
+    background-color: red;
+    font-weight: 100;
+}
+body {
+    color: black;
+    font-family:'Mountains of Christmas' , sans-serif
+}
+.playersCol {
+    border: 3px solid #000;
+    width:250px;
+    margin: 40px auto;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+    border-radius: 25px;
+}
+
+.badge{
+    background: #e2584d;
+    font-size: 14px;
+    padding: 10px 6px;
+}
+
+#user-lab {
+    position: absolute;
+    left: -5%;
+    margin: 5px -10px;
+    border-radius: 5px;
+
+}
+
+#bot-lab {
+    position: absolute;
+    right: -5%;
+    margin: 5px -8px;
+    border-radius: 5px;
+
+}
+
+.result {
+    text-align: center;
+    font-size: 35px;
+    margin: 15px;
+
 }
