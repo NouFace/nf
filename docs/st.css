@@ -5,6 +5,18 @@
     padding: 0;
 }
 
+.redL {
+    background-color: #ff1a19;
+}
+
+.yellowD {
+    background-color: #fffb1d;
+}
+
+.blueW {
+    background-color: #0008ff;
+}
+
 header > h1 {
     font-family:'Mountains of Christmas' , sans-serif;
     text-align: center;
@@ -15,8 +27,7 @@ header > h1 {
     letter-spacing: 1px ;
 }
 body {
-    background-image: url("giphy.gif");
-    background-repeat: no-repeat;
+    background: url("giphy.gif") no-repeat;
     background-size: cover  ;
     color: black;
     font-family:'Mountains of Christmas' , sans-serif;
