@@ -6,7 +6,7 @@ const _result = document.querySelector('.result')
 const _rock = document.getElementById('rock');
 const _paper = document.getElementById('paper');
 const _scissors = document.getElementById('scissors');
-const _miho = document.getElementById('res');
+const _rest = document.getElementById('res');
 
 function botChoices(){
     const choices =['rock','paper', 'scissors'];
@@ -74,6 +74,12 @@ function main() {
         game("scissors");
 
     })
-    
+
+    _rest.addEventListener('click', function () {
+        userScore = 0;
+        botScore = 0;
+        _userScore.innerHTML = userScore;
+        _botScore.innerHTML = botScore;
+    })
 
 }
