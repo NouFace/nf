@@ -109,3 +109,7 @@ span {
     cursor: pointer;
 
 }
+
+#res :hover {
+    background-color: blue;
+}
