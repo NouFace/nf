@@ -50,7 +50,7 @@ body {
     font-weight: bold;
 }
 span {
-    font-size: 30 px;
+    font-size: 80px;
 }
 
 #user-lab {
@@ -82,6 +82,7 @@ span {
 }
 
 .choice img {
+    cursor: pointer;
     display: inline-block;
     border: 3px solid #000;
     border-radius: 50%;
@@ -96,5 +97,15 @@ span {
 
 }
 
+#res {
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 50%;
+    cursor: pointer;
 
-
+}
