@@ -35,9 +35,9 @@ body {
     padding: 15px 10px;
     font-weight: bold;
 }
- span {
-     font-size: 30 px;
- }
+span {
+    font-size: 30 px;
+}
 
 #user-lab {
     position: absolute;
@@ -81,3 +81,6 @@ body {
     font-size: 35px;
 
 }
+
+
+
