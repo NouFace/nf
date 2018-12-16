@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Mountains+of+Christmas);
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -10,34 +8,41 @@
 header > h1 {
     font-family:'Mountains of Christmas' , sans-serif;
     text-align: center;
-    background-color: red;
-    font-weight: 100;
+    background-color: #ff2c35;
+    font-weight: bold;
+    padding: 5px;
+    word-spacing: 10px;
+    letter-spacing: 1px ;
 }
 body {
     color: black;
-    font-family:'Mountains of Christmas' , sans-serif
+    font-family:'Mountains of Christmas' , sans-serif;
 }
 .playersCol {
     border: 3px solid #000;
     width:250px;
     margin: 40px auto;
-    font-size: 40px;
+    font-size: 80px;
     text-align: center;
-    padding: 15px 20px;
+    padding: 5px 20px;
     position: relative;
     border-radius: 25px;
 }
 
 .badge{
-    background: #e2584d;
-    font-size: 14px;
-    padding: 10px 6px;
+    background: #ff2c35;
+    font-size: 20px;
+    padding: 15px 10px;
+    font-weight: bold;
 }
+ span {
+     font-size: 30 px;
+ }
 
 #user-lab {
     position: absolute;
     left: -5%;
-    margin: 5px -10px;
+    margin: 28px -15px;
     border-radius: 5px;
 
 }
@@ -45,14 +50,34 @@ body {
 #bot-lab {
     position: absolute;
     right: -5%;
-    margin: 5px -8px;
+    margin: 28px -15px;
     border-radius: 5px;
 
 }
 
 .result {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: bolder;
     margin: 15px;
+
+}
+
+.choice {
+    text-align: center;
+}
+
+.choice img {
+    display: inline-block;
+    border: 3px solid #000;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 20px 10px;
+}
+
+#actionM {
+    text-align: center;
+    font-weight:600;
+    font-size: 35px;
 
 }
