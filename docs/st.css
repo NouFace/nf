@@ -8,13 +8,16 @@
 header > h1 {
     font-family:'Mountains of Christmas' , sans-serif;
     text-align: center;
-    background-color: #ff2c35;
-    font-weight: bold;
+    font-size: 80px;
+    font-weight: bolder;
     padding: 5px;
     word-spacing: 10px;
     letter-spacing: 1px ;
 }
 body {
+    background-image: url("giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover  ;
     color: black;
     font-family:'Mountains of Christmas' , sans-serif;
 }
