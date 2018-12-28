@@ -35,6 +35,7 @@ function game(userChoices) {
 function win (user, bot){
     userScore++;
     _userScore.innerHTML = userScore;
+    localStorage.setItem('user',userScore);
     _result.innerHTML =   user + '   beats   ' + bot + ', You  Won !!! ';
     document.getElementById(user).classList.add('blueW');
     setTimeout(function() {
@@ -50,6 +51,7 @@ function draw (user, bot){
 function lose (user, bot){
     botScore++;
     _botScore.innerHTML = botScore;
+    localStorage.setItem('bot',botScore);
     _result.innerHTML =   bot + ' beats ' + user + ',  You  lost ! ';
     document.getElementById(user).classList.add('redL')
     setTimeout(function() {
@@ -60,6 +62,17 @@ function lose (user, bot){
 main();
 
 function main() {
+    _userScore.innerHTML = userScore;
+    _botScore.innerHTML = botScore;
+
+    if(localStorage !== null){
+        userScore = localStorage.getItem('user');
+        botScore = localStorage.getItem('bot');
+        _userScore.innerHTML = userScore;
+        _botScore.innerHTML = botScore;
+
+    }
+
     _rock.addEventListener('click', function () {
         game("rock");
 
@@ -80,6 +93,8 @@ function main() {
         botScore = 0;
         _userScore.innerHTML = userScore;
         _botScore.innerHTML = botScore;
+        localStorage.removeItem('user');
+        localStorage.removeItem('bot');
     })
 
 }
