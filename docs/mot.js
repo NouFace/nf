@@ -62,8 +62,8 @@ function lose (user, bot){
 main();
 
 function main() {
-    _userScore.innerHTML = userScore;
-    _botScore.innerHTML = botScore;
+    _userScore.innerHTML = '0';
+    _botScore.innerHTML = '0';
 
     if(localStorage !== null){
         userScore = localStorage.getItem('user');
