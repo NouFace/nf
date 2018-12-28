@@ -45,7 +45,7 @@ function draw (user, bot){
     _result.innerHTML =   "It's   a   draw !";
     document.getElementById(user).classList.add('yellowD');
     setTimeout(function() {
-    document.getElementById(user).classList.remove('yellowD')},100);
+        document.getElementById(user).classList.remove('yellowD')},100);
 
 }
 function lose (user, bot){
@@ -62,10 +62,9 @@ function lose (user, bot){
 main();
 
 function main() {
-    _userScore.innerHTML = '0';
-    _botScore.innerHTML = '0';
 
-    if(localStorage !== null){
+    if(localStorage.getItem('user')!== null || localStorage.getItem('bot')!== null){
+
         userScore = localStorage.getItem('user');
         botScore = localStorage.getItem('bot');
         _userScore.innerHTML = userScore;
